@@ -41,7 +41,21 @@
 	</ciManagement>
 
 	<inceptionYear>2015</inceptionYear>
-	
+
+	<developers>
+		<developer>
+			<id>ankon</id>
+			<name>Andreas Kohn</name>
+			<url>http://github.com/ankon</url>
+			<organization>Collaborne B.V.</organization>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>Europe/Amsterdam</timezone>
+		</developer>
+	</developers>
+
 	<!--
 	  Note that the repository and pluginRepository have the same id, so the settings
 	  are actually merged!
