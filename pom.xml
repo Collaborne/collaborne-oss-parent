@@ -26,10 +26,12 @@
 	<description>Parent POM for Collaborne OSS Projects</description>
 	<url>https://github.com/Collaborne/${project.artifactId}</url>
 
+	<!-- NOTE! This block should be manually copied into child POMs to avoid any issues with the maven-release-plugin -->
 	<scm>
 		<url>https://github.com/Collaborne/${project.artifactId}</url>
 		<connection>scm:git:https://github.com/Collaborne/${project.artifactId}.git</connection>
 		<developerConnection>${project.scm.connection}</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
 	<issueManagement>
 		<system>github</system>
