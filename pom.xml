@@ -19,7 +19,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.collaborne</groupId>
 	<artifactId>collaborne-oss-parent</artifactId>
-	<version>4-SNAPSHOT</version>
+	<version>4</version>
 	<packaging>pom</packaging>
 
 	<name>Collaborne OSS Parent Pom</name>
@@ -31,7 +31,7 @@
 		<url>https://github.com/Collaborne/${project.artifactId}</url>
 		<connection>scm:git:https://github.com/Collaborne/${project.artifactId}.git</connection>
 		<developerConnection>${project.scm.connection}</developerConnection>
-		<tag>HEAD</tag>
+		<tag>collaborne-oss-parent-4</tag>
 	</scm>
 	<issueManagement>
 		<system>github</system>
