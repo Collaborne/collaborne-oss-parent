@@ -1,6 +1,11 @@
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
 caches:
   directories:
-    - $HOME/.m2/repository
+  - "$HOME/.m2/repository"
+env:
+  global:
+  - secure: lmY4LeQBLhMkPZVGHlZbo568zFr6MNC8pJztubddIT9BwxbiCjb0iM0QEyzK1XK9nfZWU1QLHjVlfewUgVgD/Uk8786YEj8w0ZPGzBURSDHFwMhQgBrhye3lhyp9bSNFk0mxfgI95/m9XHKCQqETtwqabo08FZYaUNO+L8EpK5M=
+  - secure: DE21P9QN5ej5BTZyGZvldQCXX51IBICzxowC/5VXXMbK81hWQeIPUWhpYrcrIdQcAaYUCwqy46uF1INQHtIZBxicFOx1V+cXFbfZ9LHzV07jXjPS54J2NqNlp2A/i8tUYDHCYX4tm/1wH1qYSRhGOSS7NcwXzCvGLI2wzqDrHMM=
+after_success: '[ ${TRAVIS_PULL_REQUEST} = ''false'' ] && [ ${TRAVIS_BRANCH} = ''master'' ] && mvn deploy -DskipTests=true -B --settings deploy-settings.xml'
