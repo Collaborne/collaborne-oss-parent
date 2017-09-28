@@ -279,6 +279,9 @@
 								<goals>
 									<goal>sign</goal>
 								</goals>
+								<configuration>
+									<keyname>opensource@collaborne.com</keyname>
+								</configuration>
 							</execution>
 						</executions>
 					</plugin>
